@@ -99,14 +99,14 @@ def sudo?
 end
 
 def sudo(*args)
-  if sudo?
-    args.unshift("-A") unless ENV["SUDO_ASKPASS"].nil?
-    ohai "/usr/bin/sudo", *args
-    system "/usr/bin/sudo", *args
-  else
-    ohai *args
-    system *args
-  end
+  #if sudo?
+    #args.unshift("-A") unless ENV["SUDO_ASKPASS"].nil?
+    #ohai "/usr/bin/sudo", *args
+    #system "/usr/bin/sudo", *args
+  #else
+  ohai *args
+  system *args
+  #end
 end
 
 def getc
