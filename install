@@ -24,7 +24,7 @@ if mac?
   CORE_TAP_REPO = "https://github.com/Homebrew/homebrew-core".freeze
 else
   HOMEBREW_NAME = "Linuxbrew".freeze
-  HOMEBREW_PREFIX_DEFAULT = "/home/linuxbrew/.linuxbrew".freeze
+  HOMEBREW_PREFIX_DEFAULT = "/home/kmonisit/.linuxbrew".freeze
   HOMEBREW_CACHE = "#{ENV["HOME"]}/.cache/Homebrew".freeze
   HOMEBREW_OLD_CACHE = nil
   BREW_REPO = "https://github.com/Homebrew/brew".freeze
